@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func httpGet() {
+func Get() {
 	resp, err := http.Get("http://127.0.0.1:8888")
 	if err != nil {
 		// do something
@@ -26,5 +26,5 @@ func httpGet() {
 }
 
 func main() {
-	httpGet()
+	Get()
 }
